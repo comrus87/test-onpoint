@@ -1,0 +1,253 @@
+.slider {
+  &__vertical-list {
+    width: 1024px;
+    height: 768px;
+    @include list-default;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__vertical-item1 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-iceberg.jpg") no-repeat center;
+    background-size: cover;
+    padding: 132px 69px 0;
+  }
+
+  &__vertical-item2 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__vertical-item3 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-common.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__item1-title {
+    margin: 0;
+    font-family: $gotham;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    color: #0d319c;
+    width: 760px;
+    letter-spacing: -0.01em;
+  }
+
+  &__item1-list {
+    @include list-default;
+  }
+
+  &__item1-list li {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0d319c;
+    position: relative;
+  }
+
+  &__item1-target {
+    margin-left: 555px;
+    margin-top: 27px;
+  }
+
+  &__item1-gipo {
+    margin-left: 154px;
+    margin-top: 100px;
+  }
+
+  &__item1-risk {
+    margin-left: 721px;
+    margin-top: 70px;
+  }
+
+  &__item1-sd {
+    margin-left: 300px;
+  }
+
+  &__item1-link {
+    font-family: $gotham;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $white-color;
+    display: block;
+    text-align: center;
+    margin-top: 167px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 25px;
+
+    &:active {
+      opacity: 0.7;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-left: 2px solid $white-color;
+      border-bottom: 2px solid $white-color;
+      transform: rotate(-45deg);
+      top: 20px;
+      left: 48%;
+    }
+  }
+
+  &__signal-target {
+    display: block;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: radial-gradient(#de791b, #cf1437);
+    position: absolute;
+    top: 0;
+    left: -45px;
+
+    &::before {
+      height: 38px;
+      width: 38px;
+      left: -10px;
+      top: -11px;
+      box-shadow: 0 0 1px 3px #d01a35;
+      @include signal-animate;
+    }
+
+    &::after {
+      height: 53px;
+      width: 53px;
+      left: -17.5px;
+      top: -19px;
+      box-shadow: 0 0 1px 3px #d01a35;
+      @include signal-animate;
+    }
+  }
+
+  &__signal-gipo {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: radial-gradient(#de791b, #cf1437);
+    position: absolute;
+    top: 35px;
+    left: 58px;
+
+    &::before {
+      height: 21px;
+      width: 21px;
+      left: -4.5px;
+      top: -4.5px;
+      box-shadow: 0 0 1px 2px #d01a35;
+      @include signal-animate;
+    }
+
+    &::after {
+      height: 28px;
+      width: 28px;
+      left: -8px;
+      top: -8px;
+      box-shadow: 0 0 1px 2px #d01a35;
+      @include signal-animate;
+    }
+  }
+
+  &__signal-risk {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: radial-gradient(#de791b, #cf1437);
+    position: absolute;
+    top: 34px;
+    left: 38px;
+
+    &::before {
+      height: 10px;
+      width: 10px;
+      left: -2.5px;
+      top: -2.5px;
+      box-shadow: 0 0 0.5px 1px #d01a35;
+      @include signal-animate;
+    }
+
+    &::after {
+      height: 15px;
+      width: 15px;
+      left: -5px;
+      top: -5px;
+      box-shadow: 0 0 0.5px 1px #d01a35;
+      @include signal-animate;
+    }
+  }
+
+  &__signal-sd {
+    display: block;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: radial-gradient(#de791b, #cf1437);
+    position: absolute;
+    top: 35px;
+    left: 116px;
+
+    &::before {
+      height: 10px;
+      width: 10px;
+      left: -2.5px;
+      top: -2.5px;
+      box-shadow: 0 0 0.5px 1px #d01a35;
+      @include signal-animate;
+    }
+
+    &::after {
+      height: 15px;
+      width: 15px;
+      left: -5px;
+      top: -5px;
+      box-shadow: 0 0 0.5px 1px #d01a35;
+      @include signal-animate;
+    }
+  }
+
+  &__vertical-item2 {
+    padding-top: 248px;
+  }
+
+  &__item2-title {
+    margin: 0 auto;
+    font-family: $gotham;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+    color: $white-color;
+    width: 500px;
+    text-align: center;
+  }
+
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1.0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+

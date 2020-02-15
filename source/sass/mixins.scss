@@ -1,0 +1,15 @@
+@mixin list-default {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin signal-animate {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(208, 26, 53, 0.5);
+  transform: scale(0.1);
+  animation: pulse 1.5s infinite;
+  opacity: 0.5;
+}
