@@ -13,6 +13,7 @@
     background: url("../img/bg-iceberg.jpg") no-repeat center;
     background-size: cover;
     padding: 132px 69px 0;
+    background-color: #7fc3fd;
   }
 
   &__vertical-item2 {
@@ -20,13 +21,15 @@
     height: 100%;
     background: url("../img/bg-2.jpg") no-repeat center;
     background-size: cover;
+    background-color: #1b1e7a;
   }
 
   &__vertical-item3 {
     width: 100%;
     height: 100%;
-    background: url("../img/bg-common.jpg") no-repeat center;
     background-size: cover;
+    background-color: #1b1e7a;
+    position: relative;
   }
 
   &__item1-title {
@@ -234,6 +237,118 @@
     text-align: center;
   }
 
+  &__horizontal-list {
+    @include list-default;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__horizontal-list li {
+    height: 100%;
+    min-width: 1024px;
+  }
+
+  &__horizontal-list h1 {
+    margin: 0;
+    font-family: $gotham;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: $white-color;
+    letter-spacing: -0.01em;
+  }
+
+  &__horizontal-item3 {
+    padding: 105px 52px 0;
+    background: url("../img/back3.3.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__horizontal-item2 {
+    padding: 105px 82px 0;
+    background: url("../img/back3.2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__horizontal-item1 {
+    padding: 105px 82px 0;
+    background: url("../img/back3.1.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  &__horizontal-item3 h1 {
+    margin-left: 30px;
+  }
+
+  &__horizontal-item3 img {
+    width: 909.5px;
+    height: 468.5px;
+  }
+
+  &__horizontal-item2 img {
+    width: 755.5px;
+    height: 471.5px;
+    margin-top: 9px;
+    margin-left: 78px;
+  }
+
+  &__horizontal-item1 img {
+    width: 577px;
+    height: 329px;
+    margin-top: 57px;
+    margin-left: 160px;
+  }
+
+  &__scroll-container {
+    width: 640px;
+    position: absolute;
+    bottom: 63px;
+    left: 200px;
+  }
+
+  .slider__range {
+    appearance: none;
+    width: 100%;
+    height: 11px;
+    background: #435063;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      width: 45px;
+      height: 55px;
+      background: url("../img/pin.png") no-repeat center;
+      background-size: contain;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      appearance: none;
+      width: 45px;
+      height: 55px;
+      background: url("../img/pin.png") no-repeat center;
+      background-size: contain;
+      cursor: pointer;
+    }
+  }
+
+  &__year-list {
+    @include list-default;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 646px;
+    bottom: 21px;
+    left: 192px;
+  }
+
+  &__year-item {
+    font-family: $gotham;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $white-color;
+  }
 }
 
 @keyframes pulse {
@@ -250,4 +365,3 @@
     opacity: 0;
   }
 }
-

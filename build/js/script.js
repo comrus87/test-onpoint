@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let slide1 = document.querySelector('.slider__vertical-item1');
   let slide2 = document.querySelector('.slider__vertical-item2');
   let slide3 = document.querySelector('.slider__vertical-item3');
-  let slider = document.querySelector('.slider__vertical-list');
+  // let slider = document.querySelector('.slider__vertical-list');
+  let range = document.querySelector('.slider__range');
+
 
   let touchstartY = 0;
   let touchendY = 0;
@@ -35,12 +37,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   slide3.addEventListener('touchstart', function(evt) {
-    touchstartY = evt.changedTouches[0].screenY;
+    touchstartY = (evt.target !== range) ? evt.changedTouches[0].screenY : undefined
   });
 
   slide3.addEventListener('touchend', function(evt) {
     touchendY = evt.changedTouches[0].screenY;
-    if (touchendY > touchstartY) {
+    if (touchendY > touchstartY ) {
       slide2.scrollIntoView({behavior: 'smooth'});
     }
   });
