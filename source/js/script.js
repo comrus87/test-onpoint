@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const horizontalList = document.querySelector('.slider__horizontal-list');
   const dethRange = document.querySelector('.slider__range-deth');
   const dots = document.querySelectorAll('.slider__dot');
-
   const verticalList = document.querySelector('.slider__vertical-list');
 
   // Слайдер
@@ -94,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dethRange.style.width = range.value + '%';
   });
 });
+
 
 // let touchstartY = 0;
 // let touchendY = 0;
