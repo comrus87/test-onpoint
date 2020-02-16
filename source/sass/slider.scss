@@ -3,12 +3,13 @@
   width: 1024px;
   height: 768px;
   margin: 0 auto;
+  overflow: hidden;
 
   &__vertical-list {
     width: 100%;
     height: 100%;
     @include list-default;
-    overflow: hidden;
+    transition: transform 0.7s;
   }
 
   &__vertical-item1 {
