@@ -10,7 +10,7 @@
 <body>
   <main class="slider">
     <ul class="slider__vertical-list">
-      <li class="slider__vertical-item1">
+      <li class="slider__vertical-item slider__vertical-item1">
         <h1 class="slider__item1-title">Всегда ли цели терапии СД2 на поверхности?</h1>
         <ul class="slider__item1-list">
           <li class="slider__item1-target"><span class="slider__signal-target"></span>Цель по HbA1c</li>
@@ -18,31 +18,31 @@
           <li class="slider__item1-risk"><span class="slider__signal-risk"></span>СС риски</li>
           <li class="slider__item1-sd"><span class="slider__signal-sd"></span>Осложнения СД</li>
         </ul>
-        <a class="slider__item1-link">Листайте вниз</a>
+        <a class="slider__item1-link" href="#item3">Листайте вниз</a>
       </li>
-      <li class="slider__vertical-item2">
+
+      <li class="slider__vertical-item slider__vertical-item2">
         <h1 class="slider__item2-title">Основа терапии — патогенез СД2</h1>
       </li>
 
-      <li class="slider__vertical-item3">
-
+      <li class="slider__vertical-item slider__vertical-item3" id="item3">
         <ul class="slider__horizontal-list">
           <li class="slider__horizontal-item1">
             <h1>Звенья патогенеза СД2</h1>
             <img src="img/tab1.png" alt="Схема звеньев патогенеза">
           </li>
-<!--           <li class="slider__horizontal-item2">
+          <li class="slider__horizontal-item2">
             <h1>Смертельный октет</h1>
             <img src="img/tab2.png" alt="Схема смертельного октета">
-          </li> -->
-
-<!--           <li class="slider__horizontal-item3">
+          </li>
+          <li class="slider__horizontal-item3">
             <h1>Звенья патогенеза СД2</h1>
             <img src="img/tab3.png" alt="Схема звеньев патогенеза">
-          </li> -->
+          </li>
         </ul>
         <div class="slider__scroll-container">
           <input class="slider__range" type="range" min="1" max="100" value="100" id="range">
+          <div class="slider__range-deth"></div>
         </div>
         <ul class="slider__year-list">
           <li class="slider__year-item">1988</li>
@@ -50,6 +50,11 @@
           <li class="slider__year-item">2016</li>
         </ul>
       </li>
+    </ul>
+    <ul class="slider__dots">
+      <li class="slider__dot slider__dot--active"></li>
+      <li class="slider__dot"></li>
+      <li class="slider__dot"></li>
     </ul>
   </main>
 
